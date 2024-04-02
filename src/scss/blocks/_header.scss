@@ -1,0 +1,269 @@
+.header {
+	// max-height: 680px;
+
+}
+
+.header__body {
+	position: relative;
+	margin: 0 auto;
+	height: 680px;
+}
+
+.swiper-header {
+	margin-left: 100px !important;
+
+	@include tablet {
+		margin-left: 0 !important;
+	}
+}
+
+.slide {
+	
+}
+
+.slide-img1 {
+	height: 680px;
+	background: url(./../img/photo/slider1.jpg);
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.slide-img2 {
+	height: 680px;
+	background: url(./../img/photo/slider2.jpg);
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.slide-img3 {
+	height: 680px;
+	background: url(./../img/photo/slider3.jpg);
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.header__content {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 9;
+	pointer-events: none;
+}
+
+.header__row {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 32px;
+	padding-right: 17px;
+}
+
+.online-booking {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 43px;
+	pointer-events: all;
+
+	@media (max-width: 899px) {
+		flex-direction: column-reverse;
+		gap: 20px;
+	}
+	@include tablet {
+		display: none;
+	}
+}
+
+.header__tel {
+	font-size: 12px;
+	font-weight: 500;
+	line-height: 16.34px;
+	letter-spacing: 0.1em;
+	color: #fff;
+}
+
+.online-booking-btn {
+	width: 160px;
+	height: 36.1px;
+	border-radius: 25px;
+	border: 1px solid #FF6C00;
+	
+	font-size: 12px;
+	font-weight: 500;
+	line-height: 16.34px;
+	letter-spacing: 0.09em;
+	color: #fff;
+	transition: background-color 0.2s ease-in;
+
+	&:hover {
+        background-color: #ffffff27;
+    }
+}
+
+
+.header__title {
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	
+	top: 272px;
+	left: 199px;
+	gap: 20px;
+
+	@include tablet {
+		left: 31px;
+	}
+}
+
+.sub-title {
+	position: relative;
+	padding-left: 80px;
+	font-size: 11px;
+	font-weight: 600;
+	line-height: 14.98px;
+	color: #9DA4BD99;
+	
+	&::before {
+		content: '';
+        position: absolute;
+        left: 0;
+        top: calc(50% - 1.5px);
+        width: 60px;
+        height: 1px;
+        background-color: #9DA4BD99;
+	}
+}
+
+.header__title-text {
+	max-width: 360px;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 30px;
+	letter-spacing: 0.02em;
+	color: #9DA4BD;
+
+	@include mobile {
+		font-size: 16px;
+		line-height: 26px;
+	}
+}
+
+.header__social {
+	position: absolute;
+	left: 30px;
+	bottom: 40px;
+	display: flex;
+	gap: 40px;
+	transform: rotate(-90deg) translate(0%, 100%);
+    transform-origin: left bottom;
+	pointer-events: all;
+
+	@include tablet {
+		display: none;
+	}
+}
+
+.social-line {
+	width: 60px;
+	height: 1px;
+	margin-top: 7px;
+	background-color: #303030;
+}
+
+.socials-hed {
+	font-size: 11px;
+	font-weight: 500;
+	line-height: 15px;
+	letter-spacing: 0.2em;
+	color: #303030;
+	transition: 0.2s ease-in;
+
+	&:hover {
+		color: #FF6C00;
+	}
+	
+
+}
+
+.header_scrollbar {
+	position: absolute;
+    right: 20px;
+    top: 45%;
+	
+	transform: rotate(90deg);
+    transform-origin: right top;
+
+	pointer-events: all;
+
+	@include tablet {
+		display: none;
+	}
+}
+
+.swiper-scrollbar {
+	height: 2px !important;
+	width: 100px !important;
+    // height: 0px !important;
+    border-radius: 0 !important;
+    background-color: #9DA4BD !important;
+	--swiper-scrollbar-drag-bg-color: rgb(255, 255, 255);
+
+	// transform: rotate(90deg) translate(50%, 0%); /*поворот*/
+    // transform-origin: right top;
+	
+}
+.swiper-scrollbar-drag {
+    border-radius: 0 !important;
+}
+
+.header_slider-controls {
+	position: absolute;
+	right: 20px;
+	bottom: 40px;
+	display: flex;
+	gap: 24px;
+	pointer-events: all;
+	@include tablet {
+		display: none;
+	}
+}
+
+.slider-controls-btn_back {
+	width: 60px;
+	padding-bottom: 8px;
+	border-bottom: 1px solid #9DA4BD99;
+	
+	font-size: 11px;
+	font-weight: 500;
+	line-height: 14.98px;
+	letter-spacing: 0.1em;
+	text-align: left;
+	color: #9DA4BD99;
+	
+	&:hover {
+		border-bottom: 1px solid #FF6C00;
+		color: #FF6C00;
+	}
+}
+
+.slider-controls-btn_go {
+	width: 60px;
+	padding-bottom: 8px;
+	border-bottom: 1px solid #ffffff;
+	
+	font-size: 11px;
+	font-weight: 500;
+	line-height: 14.98px;
+	letter-spacing: 0.1em;
+	text-align: right;
+	color: #ffffff;
+	
+	&:hover {
+		border-bottom: 1px solid #FF6C00;
+		color: #FF6C00;
+	}
+}
+

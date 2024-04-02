@@ -1,0 +1,61 @@
+.photo {
+    @include mobile {
+        margin: 0 15px;
+    }
+}
+
+.photo__barba {
+    display: flex;
+    gap: 20px;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 15px;
+    color: #303030;
+
+    @include laptopXL {
+        justify-content: center;
+    }
+}
+
+.photo-line {
+    width: 60px;
+	height: 1px;
+	margin-top: 7px;
+	background-color: #303030;
+}
+
+.barbers__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 270px);
+    grid-template-rows: 360px;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 44px;
+
+    @include laptopXL {
+        grid-template-columns: repeat(2, 330px);
+        grid-template-rows: repeat(2, 360px);
+    }
+    @include tablet {
+        grid-template-columns: repeat(1, 418px);
+        grid-template-rows: repeat(4, 360px);
+    }
+    @include mobile {
+        grid-template-columns: repeat(1, 100%);
+    }
+}
+
+.photo__gallery {
+    width: 100%;
+    max-height: 360px;
+    transition: all 0.2s ease-in;
+    
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    &:hover {
+        transform: scale(1.1);
+    }
+}

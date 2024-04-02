@@ -1,0 +1,81 @@
+<header class="header">
+    <div class="container">
+        <div class="header__body">
+            
+            <div id="swiper-header" class="swiper swiper-header">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="slide">
+                            <div class="slide-img1"></div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide">
+                            <div class="slide-img2"></div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide">
+                            <div class="slide-img3"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="header__content">
+                <div class="header__row">
+
+                    <div class="logo">
+                        <svg class="icon_lg icon_lg--logo">
+                            <use href="./img/svgsprite/sprite.symbol.svg#logo"></use>
+                        </svg>
+                    </div>
+
+                    <nav class="header__nav nav">
+                        <ul class="nav__list">
+                            <li><a href="#about">О нас</a></li>
+                            <li><a href="#services">Сервис и прайс</a></li>
+                            <li><a href="#barbers">Барберы</a></li>
+                            <li><a href="#footer">Контакты</a></li>
+                        </ul>
+                    </nav>
+
+                    <div class="online-booking">
+                        <div class="header__tel">+7 044 111 11 11</div>
+                        <button data-modal-button="modal-1" class="online-booking-btn">ОНЛЛАЙН ЗАПИСЬ</button>
+                    </div>
+                </div>
+
+                <div class="header__title">
+                    <div class="sub-title">Парикмахерская для мужчин в Казани</div>
+                    <div><h1 class="title-1">BarberShop</h1></div>
+                    <div class="header__title-text">Мы являемся экспертами в модных мужских стрижках.
+                        Работаем быстро, аккуратно и стильно.</div>
+                </div>
+                <div class="header__social">
+                    <span class="social-line"></span>
+                    <a href="#!" class="socials-hed">Instagram</a>
+                    <a href="#!" class="socials-hed">Youtube</a>
+                </div>
+
+                <div class="header_scrollbar">
+                    <div class="swiper-scrollbar"></div>
+                    
+                </div>
+
+                <div class="header_slider-controls">
+                    <button id="sliderPrev" class="slider-controls-btn_back">
+                        Назад
+                    </button>
+                    <button id="sliderNext" class="slider-controls-btn_go">
+                        Вперед
+                    </button>
+                </div>
+            </div>
+            <button class="mobile-nav-btn">
+                <div class="nav-icon"></div>
+            </button>
+        </div>
+    </div>
+</header>
+@@include('mobile-nav.html')

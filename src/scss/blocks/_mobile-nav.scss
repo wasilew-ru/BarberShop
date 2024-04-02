@@ -1,0 +1,136 @@
+.mobile-nav {
+	position: fixed;
+	
+	right: -100%;
+	width: 100%;
+	height: 100%;
+    z-index: 99;
+
+	background: #191C2633;
+
+	transition:  0.2s ease-in;
+}
+
+.mobile-nav--open {
+	top: 0;
+	right: 0;
+}
+
+.mobile-nav_content {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 337px;
+	height: 100vh;
+	
+	background: #ffffff;
+	display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+	gap: 65px;
+    padding-top: 118px;
+	padding-left: 40px;
+
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 24.51px;
+	letter-spacing: 0.1em;
+	color: #303030;
+	box-shadow: -4px 0px 10px 1px #00000042;
+
+	@include mobileS {
+		width: 100%;
+	}
+}
+
+.mobile-nav a {
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 24.51px;
+	letter-spacing: 0.1em;
+	color: #303030;
+	transition: color 0.2s ease-in;
+
+	&:hover {
+		color: #FF6C00;
+		
+	}
+}
+
+.mobile-nav__list {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 24px;
+}
+
+.online-booking-mobile {
+	display: flex;
+	flex-direction: column;
+	gap: 19px;
+}
+
+.tel-mobile {
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 24.51px;
+	letter-spacing: 0.1em;
+	text-align: left;
+
+	color: #303030;
+}
+
+.online__btn-mobile {
+	width: 194px;
+	height: 40px;
+	border-radius: 25px;
+	border: 1px solid #FF6C00;
+	
+	font-size: 12px;
+	font-weight: 600;
+	line-height: 16.34px;
+	letter-spacing: 0.09em;
+
+	color: #303030;
+	// transition: 0.2s ease-in;
+
+	&:hover {
+        background-color: #ffd3b371;
+        box-shadow: 0px 0px 10px 3px #ffd3b371;
+    }
+}
+
+
+.mobile__social {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	gap: 40px;
+}
+
+.mobile__social-line {
+	width: 60px;
+	height: 1px;
+	margin-top: 9px;
+	background-color: #303030;
+}
+
+.social-column {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+}
+.social-column a {
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 19px;
+	letter-spacing: 0.2em;
+
+	color: #303030;
+	transition: color 0.2s ease-in;
+
+	&:hover {
+		color: #FF6C00;
+	}
+}
+

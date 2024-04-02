@@ -1,0 +1,26 @@
+.header__nav {
+
+	@include tablet {
+		display: none;
+	}
+}
+.nav {
+	pointer-events: all;
+	a {
+		font-size: 12px;
+		font-weight: 500;
+		line-height: 17px;
+		letter-spacing: 0.1em;
+		color: #fff;
+		transition: 0.2s ease-in;
+		
+		&:hover {
+			color: #FF6C00;
+		}
+	}
+}
+
+.nav__list {
+	display: flex;
+	column-gap: 30px;
+}

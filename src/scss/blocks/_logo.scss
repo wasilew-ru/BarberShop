@@ -1,0 +1,20 @@
+.logo {
+    font-size: 32px;
+    @include tablet {
+       margin-left: 31px; 
+    }
+}
+
+.icon_lg {
+	fill: transparent;
+	stroke: transparent;
+	width: 68px;
+	height: 56px;
+}
+
+.icon_lg--logo {
+	fill: #303030;
+    @include tablet {
+        fill: #ffffff;
+    }
+}

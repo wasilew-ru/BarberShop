@@ -1,0 +1,46 @@
+.fade-block {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0; top: 0; right: 0; bottom: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(44, 44, 44, 0.69);
+    z-index: 999;
+}
+
+.modal-window {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px;
+    background-color: #191C26;
+
+    @include tablet {
+        padding: 30px 20px;
+    }
+    @include mobile {
+        padding: 30px 10px;
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+[data-name], [data-tab] {
+    cursor: pointer;
+}
+
+.modal__buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    @include laptop {
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+}
